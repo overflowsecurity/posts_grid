@@ -10,25 +10,36 @@
  function tbare_wordpress_plugin_demo($atts) {
 	$Content = "<style>\r\n";
 	$Content .= "h3.demoClass {\r\n";
-	$Content .= "color: #26b158;\r\n";
-	$Content .= "}\r\n";
+    $Content .= "color: #26b158;\r\n";
+    $Content .= "}\r\n";
+    $Content .= "ul.postitem {\r\n";
+    $Content .= "color: #26b158;\r\n";
+    $Content .= "padding-left: 50%;";
+    $Content .= "}\r\n";
 	$Content .= "</style>\r\n";
 	$Content .= '<h3 class="demoClass">Check it out!</h3>';
-     
-    $args = array(
+    
+    $Content .= '
+    <div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;"> Left </div>
+    <div style="margin-left: 620px;"> Right </div>
+
+    </div>
+    ';
+/*     $args = array(
         'numberposts'	=> 20,
-        'category'		=> 4
+        //'category'		=> 4
     );
     $my_posts = get_posts( $args );
     
     if( ! empty( $my_posts ) ){
         $output = '<ul>';
         foreach ( $my_posts as $p ){
-            $output .= '<li><a href="' . get_permalink( $p->ID ) . '">' 
+            $output .= '<li class="postitem"><a href="' . get_permalink( $p->ID ) . '">' 
             . $p->post_title . '</a></li>';
         }
         $output .= '<ul>';
-    }
+    } */
 
     return $output;
 
