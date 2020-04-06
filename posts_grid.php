@@ -33,9 +33,13 @@
 
     <?php else : ?>
     <p><?php __('No News'); ?></p>
-    <?php endif; ?>
+    <?php endif; 
 
     return $Content;
+
+
 }
 
 add_shortcode('tbare-plugin-demo', 'tbare_wordpress_plugin_demo');
+
+?>
