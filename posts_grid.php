@@ -19,14 +19,8 @@
 	$Content .= "</style>\r\n";
 	$Content .= '<h3 class="demoClass">Check it out!</h3>';
     
-    $Content .= '
-    <div style="width: 100%; overflow: hidden;">
-    <div style="width: 600px; float: left;"> Left </div>
-    <div style="margin-left: 620px;"> Right </div>
-
-    </div>
-    ';
-/*     $args = array(
+   
+    $args = array(
         'numberposts'	=> 20,
         //'category'		=> 4
     );
@@ -35,13 +29,24 @@
     if( ! empty( $my_posts ) ){
         $output = '<ul>';
         foreach ( $my_posts as $p ){
-            $output .= '<li class="postitem"><a href="' . get_permalink( $p->ID ) . '">' 
+            $tumbs = get_the_post_thumbnail($p->ID);
+            $output .= ' <div style="display: table-cell; border: 10px; boarder-color: black;"><li class="postitem"><a href="' . get_permalink( $p->ID ) . '">' 
+            $output .= ' <div style="display: table-cell; border: 10px; boarder-color: black;"><li class="postitem"><a href="' . $tumbs . '">' 
             . $p->post_title . '</a></li>';
         }
         $output .= '<ul>';
-    } */
+    }
 
-    return $output;
+    $Content .= '
+    <div style="width: 100%; display: table;">
+    <div style="display: table-row">
+        <div style="width: 50%; display: table-cell;"> Left </div>
+    ' . $output . '</div>
+    </div>
+    </div>
+    ';
+
+    return $Content;
 
 
 }
