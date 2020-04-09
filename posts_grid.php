@@ -29,7 +29,7 @@
     if( ! empty( $my_posts ) ){
         $output = '<ul>';
         foreach ( $my_posts as $p ){
-            $tumbs = get_the_post_thumbnail($p->ID);
+            $tumbs = get_the_post_thumbnail($p->ID, 'medium');
             $output .= ' <div style="display: table-cell; border: 10px; boarder-color: black;"><li class="postitem"><a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a></li>';
             $output2 .= ' <div style="display: table-cell; border: 10px; boarder-color: black;"><li class="postitem">' . $tumbs;
         }
