@@ -29,9 +29,9 @@
     if( ! empty( $my_posts ) ){
         $output = '<ul>';
         foreach ( $my_posts as $p ){
-            $tumbs = get_the_post_thumbnail($p->ID, 'medium');
+            $tumbs = get_the_post_thumbnail($p->ID, 'large');
             $output .= ' <div style="display: table-cell; border: 10px; boarder-color: black;"><li class="postitem"><a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a></li>';
-            $output2 .= ' <div style="display: table-cell; border: 10px; boarder-color: black;"><li class="postitem">' . $tumbs;
+            $output .= ' <div style="display: table-cell; border: 10px; boarder-color: black;"><li class="postitem">' . $tumbs;
         }
         $output .= '<ul>';
     }
@@ -39,7 +39,7 @@
     $Content .= '
     <div style="width: 100%; display: table;">
     <div style="display: table-row">
-        <div style="width: 50%; display: table-cell; float: left;">' . $output2 . '</div>
+        <div style="width: 50%; display: table-cell;"> Left </div>
     ' . $output . '</div>
     </div>
     </div>
