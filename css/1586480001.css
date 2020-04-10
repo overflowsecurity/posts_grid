@@ -32,3 +32,13 @@ p {
     clear:both
 }
 
+.splitscreen {
+    display:flex;
+}
+.splitscreen .left {
+    flex: 1;
+}
+.splitscreen .right {
+    flex: 1;
+}
+

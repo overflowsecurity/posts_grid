@@ -19,21 +19,21 @@
     
     if( ! empty( $my_posts ) ){
         $output = '<body>';
-        $output .= '<div id="wrapper_jt">';
+        $output .= '<div id="splitscreen">';
         $output .= '<ul>';
         foreach ( $my_posts as $p ){
             $tumbs = get_the_post_thumbnail($p->ID, 'medium');
-            $output .= '<div id="left_jt">';
+            $output .= '<div id="left">';
             $output .= ' <li><a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a></li>';
             $output .= '</div>';
-            $output .= '<div id="content_jt">';
+            $output .= '<div id="right">';
             $output .= ' <li>' . $tumbs . '</li>';
             $output .= '</div>';
-            $output .= '<div class="clearfix"></div>';
+
         }
         $output .= '<ul>';
         $output .= '</div>';
-        $output .= '<div class="clearfix"></div>';
+
         $output .= '</body>';
     }
 
