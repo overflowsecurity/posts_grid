@@ -26,7 +26,7 @@ function wpse_load_plugin_css() {
     $my_posts = get_posts( $args );
     
     if( ! empty( $my_posts ) ){
-        $output = '<body>';
+        //$output = '<body>';
         $output .= '<div id="flex-container">';
         foreach ( $my_posts as $p ){
             $tumbs = get_the_post_thumbnail($p->ID, 'medium');
@@ -40,7 +40,7 @@ function wpse_load_plugin_css() {
         }
         $output .= '</div>';
 
-        $output .= '</body>';
+        //$output .= '</body>';
     }
 
     //$Content .= $output;
