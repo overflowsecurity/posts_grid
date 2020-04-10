@@ -39,7 +39,6 @@ function wpse_load_plugin_css() {
             $output .= '</div>';
             
         }
-        $output .= ' <div class="break"></div>';
         $output .= '</ul>';
         $output .= '</div>';
     }
