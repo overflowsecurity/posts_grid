@@ -8,16 +8,7 @@
  */
  
  function tbare_wordpress_plugin_demo($atts) {
-	$Content = "<style>\r\n";
-	$Content .= "h3.demoClass {\r\n";
-    $Content .= "color: #26b158;\r\n";
-    $Content .= "}\r\n";
-    $Content .= "ul.postitem {\r\n";
-    $Content .= "color: #26b158;\r\n";
-    $Content .= "padding-left: 50%;";
-    $Content .= "}\r\n";
-	$Content .= "</style>\r\n";
-	$Content .= '<h3 class="demoClass">Check it out!</h3>';
+	$Content = '<link rel="stylesheet" type="text/css" href="/css/1586480001.css" />';
     
    
     $args = array(
@@ -30,8 +21,8 @@
         $output = '<ul>';
         foreach ( $my_posts as $p ){
             $tumbs = get_the_post_thumbnail($p->ID, 'large');
-            $output2 .= ' <div style="display: table-cell; border: 10px; boarder-color: black;"><li class="postitem"><a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a></li>';
-            $output .= ' <div style="display: table-cell; border: 10px; boarder-color: black;"><li class="postitem">' . $tumbs;
+            $output .= ' <div style="display: table-cell; border: 10px; boarder-color: black;"><li class="content"><a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a></li>';
+            $output .= ' <div style="display: table-cell; border: 10px; boarder-color: black;"><li class="leftcolumn">' . $tumbs;
         }
         $output .= '<ul>';
     }
@@ -45,7 +36,7 @@
     </div>
     ';
 
-    return $Content;
+    return $output;
 
 
 }
