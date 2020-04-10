@@ -27,15 +27,15 @@ function wpse_load_plugin_css() {
     
     if( ! empty( $my_posts ) ){
         //$output = '<body>';
-        $output = '<div class="splitscreen">';
-        $output .= '<ul class="splitscreen">';
+        $output = '<div class="wrapper_jt">';
+        $output .= '<ul>';
         foreach ( $my_posts as $p ){
             $tumbs = get_the_post_thumbnail($p->ID, 'medium');
-            $output .= '<div class="right">';
+            $output .= '<div class="content_jt">';
             $output .= '<li>';
             $output .= '<a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a></li>';
             $output .= '</div>';
-            $output .= '<div class="left">';
+            $output .= '<div class="left_jt">';
             $output .= $tumbs;
             $output .= '</div>';
             $output .= '</li>';
