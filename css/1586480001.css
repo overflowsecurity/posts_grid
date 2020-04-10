@@ -39,9 +39,11 @@ p {
 }
 .splitscreen .left {
     flex: 1;
+    clear: both;
 }
 .splitscreen .right {
     flex: 1;
+    clear: both;
 }
 
 /* .flex-container {
