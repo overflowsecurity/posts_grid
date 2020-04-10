@@ -34,6 +34,7 @@ p {
 
 .splitscreen {
     display:flex;
+    flex-wrap: nowrap;
     background-color: purple;
 }
 .splitscreen .left {
