@@ -20,18 +20,16 @@
     if( ! empty( $my_posts ) ){
         $output = '<body>';
         $output .= '<div id="splitscreen">';
-        $output .= '<ul>';
         foreach ( $my_posts as $p ){
             $tumbs = get_the_post_thumbnail($p->ID, 'medium');
             $output .= '<div id="right">';
-            $output .= ' <li><a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a></li>';
+            $output .= '<a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a>';
             $output .= '</div>';
             $output .= '<div id="left">';
-            $output .= ' <li>' . $tumbs . '</li>';
+            $output .= $tumbs;
             $output .= '</div>';
 
         }
-        $output .= '<ul>';
         $output .= '</div>';
 
         $output .= '</body>';
