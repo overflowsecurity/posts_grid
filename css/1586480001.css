@@ -26,11 +26,10 @@ p {
 
 
 .left {
-    width: 60%;
+    width: 57%;
     display: inline-block;
     clear: both;
     padding-bottom: 10px;
-    padding-right: 20px;
 }
 .clearfix{
     clear:both
