@@ -20,12 +20,12 @@ p {
 #content {
     float: left;
     background: #FFFFFF;
-    width: 50% !important;
+    width: 500px !important;
 }
 
 #leftcolumn {
     background: #FFFFFF;
-    width: 50% !important;
+    width: 500px !important;
     float: left !important;
     
 }
