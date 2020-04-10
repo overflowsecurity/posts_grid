@@ -20,7 +20,7 @@
     if( ! empty( $my_posts ) ){
         $output = '<ul>';
         foreach ( $my_posts as $p ){
-            $tumbs = get_the_post_thumbnail($p->ID, 'large');
+            $tumbs = get_the_post_thumbnail($p->ID, 'medium');
             $output .= ' <li class="content"><a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a></li>';
             $output .= ' <li class="leftcolumn">' . $tumbs . '</li>';
         }
