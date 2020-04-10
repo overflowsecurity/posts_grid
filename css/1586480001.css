@@ -21,6 +21,7 @@ p {
     float: left;
     background: #FFFFFF;
     width: 50% !important;
+    padding-left: 50%;
 }
 
 #leftcolumn {
