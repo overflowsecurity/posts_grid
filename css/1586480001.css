@@ -22,6 +22,8 @@ p {
     float: right;
     clear: both;
     padding-bottom: 10px;
+    border-color: purple;
+    border-radius: 5px;
 }
     
 
@@ -31,6 +33,8 @@ p {
     display: inline-block;
     clear: both;
     padding-bottom: 10px;
+    border-color: greenyellow;
+    border-radius: 5px;
 }
 .clearfix{
     clear:both
