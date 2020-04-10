@@ -15,23 +15,17 @@ p {
 .wrapper {
     margin: 0 auto;
     width: 1000px;
-    display: inline-block;
-    background-color: purple;
 }
 
 .content {
     float: left;
     background: #FFFFFF;
-    width: 50%;
-    margin-left: 50px;
-}
+    width: 50%;}
 
 .left {
     background: #FFFFFF;
     width: 50%;
     float: left;
-    position: absolute;
-
 }
 .clearfix{
     clear:both
