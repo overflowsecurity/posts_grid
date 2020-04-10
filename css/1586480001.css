@@ -30,6 +30,7 @@ p {
     display: inline-block;
     clear: both;
     padding-bottom: 10px;
+    padding-right: 20px;
 }
 .clearfix{
     clear:both
