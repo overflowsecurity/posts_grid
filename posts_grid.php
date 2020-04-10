@@ -27,16 +27,10 @@
         $output .= '<ul>';
     }
 
-    $Content .= '
-    <div style="width: 100%; display: table;">
-    <div style="display: table-row">
-        <div style="width: 50%; display: table-cell;">' . $output2 .  '</div>
-    ' . $output . '</div>
-    </div>
-    </div>
-    ';
+    $Content .= $output;
 
-    return $output;
+
+    return $Content;
 
 
 }
