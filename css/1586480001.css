@@ -34,6 +34,8 @@ p {
     display: inline-block;
     clear: both;
     padding-bottom: 10px;
+    border-bottom: black;
+    border-style: solid;
 }
 .clearfix{
     clear:both
