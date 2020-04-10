@@ -14,17 +14,17 @@ p {
 
 #wrapper_jt {
     margin: 0 auto;
-    width: 1000px;
+    width: 2048px;
 }
 
 #content_jt {
     background: #FFFFFF;
-    width: 500px !important;
+    width: 50% !important;
 }
 
 #left_jt {
     background: #FFFFFF;
-    width: 500px !important;
+    width: 50% !important;
     display:inline-block;
     
 }
