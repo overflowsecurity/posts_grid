@@ -23,10 +23,10 @@
         foreach ( $my_posts as $p ){
             $tumbs = get_the_post_thumbnail($p->ID, 'medium');
             $output .= '<div id="leftcolumn">';
-            $output .= ' <li class="leftcolumn"><a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a></li>';
+            $output .= ' <li><a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a></li>';
             $output .= '</div>';
             $output .= '<div id="content">';
-            $output .= ' <li class="content">' . $tumbs . '</li>';
+            $output .= ' <li>' . $tumbs . '</li>';
             $output .= '</div>';
         }
         $output .= '<ul>';
