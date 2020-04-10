@@ -18,7 +18,6 @@ p {
 }
 
 .content {
-    background: #FFFFFF;
     width: 50%;
     float: right;
     clear: both;
@@ -27,7 +26,6 @@ p {
 
 
 .left {
-    background: #FFFFFF;
     width: 50%;
     display: inline-block;
     clear: both;
