@@ -21,6 +21,7 @@ p {
     background: #FFFFFF;
     width: 50%;
     float: right;
+    clear: both;
 }
     
 
@@ -29,6 +30,7 @@ p {
     background: #FFFFFF;
     width: 50%;
     float: left;
+    clear: both;
 }
 .clearfix{
     clear:both
