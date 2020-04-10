@@ -27,13 +27,13 @@ function wpse_load_plugin_css() {
     
     if( ! empty( $my_posts ) ){
         //$output = '<body>';
-        $output = '<div id="flex-container">';
+        $output = '<div id="flex-container" style="display: flex;background-color: DodgerBlue;">';
         foreach ( $my_posts as $p ){
             $tumbs = get_the_post_thumbnail($p->ID, 'medium');
-            $output .= '<div>';
+            $output .= '<div style="background-color: #f1f1f1;margin: 10px;padding: 20px;font-size: 30px;">';
             $output .= '<a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a>';
             $output .= '</div>';
-            $output .= '<div>';
+            $output .= '<div style="background-color: #f1f1f1;margin: 10px;padding: 20px;font-size: 30px;">';
             $output .= $tumbs;
             $output .= '</div>';
 
