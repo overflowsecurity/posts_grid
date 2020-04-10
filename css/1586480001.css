@@ -12,7 +12,7 @@ p {
     padding: 10px;
 }
 
-#wrapper_jt {
+/* #wrapper_jt {
     margin: 0 auto;
     width: 1000px;
 }
@@ -30,13 +30,12 @@ p {
 }
 .clearfix{
     clear:both
-}
+} */
 
 .splitscreen {
     display:flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    background-color: purple;
 }
 .splitscreen .left {
     flex: 1;
@@ -45,7 +44,7 @@ p {
     flex: 1;
 }
 
-.flex-container {
+/* .flex-container {
     display: flex;
     background-color: DodgerBlue;
     clear: both;
@@ -57,4 +56,4 @@ p {
     padding: 20px;
     font-size: 30px;
     clear: both;
-  }
+  } */
