@@ -29,6 +29,7 @@
             $output .= '<div id="content_jt">';
             $output .= ' <li>' . $tumbs . '</li>';
             $output .= '</div>';
+            $output .= '<div class="clearfix"></div>';
         }
         $output .= '<ul>';
         $output .= '</div>';
