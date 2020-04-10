@@ -23,8 +23,7 @@ p {
     clear: both;
     padding-bottom: 10px;
     border-color: purple;
-    border-radius: 5px;
-}
+    border: 10px;}
     
 
 
@@ -34,7 +33,7 @@ p {
     clear: both;
     padding-bottom: 10px;
     border-color: greenyellow;
-    border-radius: 5px;
+    border: 10px;
 }
 .clearfix{
     clear:both
