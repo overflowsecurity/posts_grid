@@ -34,7 +34,7 @@ function wpse_load_plugin_css() {
             $output .= '<div class="content">';
             //$output .= '<li>';
             $output .= '<a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a></li>';
-            $output .= the_content($p->ID);
+            $output .= get_post_field('post_content', $p->ID);
             $output .= '</div>';
             $output .= '<div class="left">';
             $output .= $tumbs;
