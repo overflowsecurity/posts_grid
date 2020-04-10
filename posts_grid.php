@@ -32,11 +32,13 @@ function wpse_load_plugin_css() {
         foreach ( $my_posts as $p ){
             $tumbs = get_the_post_thumbnail($p->ID, 'medium');
             $output .= '<div class="right">';
-            $output .= '<li class="right"><a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a></li>';
+            $output .= '<li>';
+            $output .= '<a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a></li>';
             $output .= '</div>';
             $output .= '<div class="left">';
-            $output .= '<li class="left">' . $tumbs . '</li>';
+            $output .= $tumbs;
             $output .= '</div>';
+            $output .= '</li>';
             
         }
         $output .= '</ul>';
