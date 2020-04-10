@@ -12,21 +12,21 @@ p {
     padding: 10px;
 }
 
-#wrapper {
+.wrapper {
     margin: 0 auto;
     width: 1000px;
     display: inline-block;
     background-color: purple;
 }
 
-#content {
+.content {
     float: left;
     background: #FFFFFF;
     width: 50%;
     margin-left: 50px;
 }
 
-#left {
+.left {
     background: #FFFFFF;
     width: 50%;
     float: left;
