@@ -23,10 +23,10 @@
         $output .= '<ul>';
         foreach ( $my_posts as $p ){
             $tumbs = get_the_post_thumbnail($p->ID, 'medium');
-            $output .= '<div id="left">';
+            $output .= '<div id="right">';
             $output .= ' <li><a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a></li>';
             $output .= '</div>';
-            $output .= '<div id="right">';
+            $output .= '<div id="left">';
             $output .= ' <li>' . $tumbs . '</li>';
             $output .= '</div>';
 
