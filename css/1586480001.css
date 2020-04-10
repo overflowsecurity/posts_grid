@@ -18,13 +18,14 @@ p {
 }
 
 #content {
+    max-width: 100%;
     float: left;
     background: #FFFFFF;
     width: 50% !important;
-    padding-left: 50%;
 }
 
 #leftcolumn {
+    max-width: 100%;
     background: #FFFFFF;
     width: 50% !important;
     float: left !important;
