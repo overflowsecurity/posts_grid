@@ -22,9 +22,7 @@ p {
     float: right;
     clear: both;
     padding-bottom: 10px;
-    border-color: purple;
-    border: 10px;}
-    
+}
 
 
 .left {
@@ -32,8 +30,6 @@ p {
     display: inline-block;
     clear: both;
     padding-bottom: 10px;
-    border-color: greenyellow;
-    border: 10px;
 }
 .clearfix{
     clear:both
