@@ -18,7 +18,6 @@ p {
 }
 
 #content {
-    float: left;
     background: #FFFFFF;
     width: 500px !important;
 }
