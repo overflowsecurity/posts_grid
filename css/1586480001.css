@@ -12,18 +12,18 @@ p {
     padding: 10px;
 }
 
-#wrapper {
+#wrapper_jt {
     margin: 0 auto;
     width: 1000px;
 }
 
-#content {
+#content_jt {
     background: #FFFFFF;
     width: 500px !important;
     float: right;
 }
 
-#left {
+#left_jt {
     background: #FFFFFF;
     width: 500px !important;
     float: left !important;
