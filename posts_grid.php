@@ -8,7 +8,7 @@
  */
  
  function tbare_wordpress_plugin_demo($atts) {
-	$Content = '<link rel="stylesheet" type="text/css" href="/css/1586480001.css" />';
+	$Content = '<head><link rel="stylesheet" type="text/css" href="/css/1586480001.css" /></head>';
     
    
     $args = array(
@@ -18,7 +18,8 @@
     $my_posts = get_posts( $args );
     
     if( ! empty( $my_posts ) ){
-        $output = '<div id="wrapper">';
+        $output = '<body>';
+        $output .= '<div id="wrapper">';
         $output .= '<ul>';
         foreach ( $my_posts as $p ){
             $tumbs = get_the_post_thumbnail($p->ID, 'medium');
@@ -31,6 +32,7 @@
         }
         $output .= '<ul>';
         $output .= '</div>';
+        $output .= '</body>';
     }
 
     $Content .= $output;
