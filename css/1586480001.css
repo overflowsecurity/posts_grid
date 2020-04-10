@@ -18,15 +18,14 @@ p {
 }
 
 .content {
-    float: left;
     background: #FFFFFF;
     width: 50%;}
+
 
 .left {
     background: #FFFFFF;
     width: 50%;
     float: left;
-    clear: both;
 }
 .clearfix{
     clear:both
