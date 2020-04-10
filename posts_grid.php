@@ -32,6 +32,7 @@
         }
         $output .= '<ul>';
         $output .= '</div>';
+        $output .= '<div class="clearfix"></div>';
         $output .= '</body>';
     }
 

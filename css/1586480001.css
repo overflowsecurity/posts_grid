@@ -20,7 +20,6 @@ p {
 #content_jt {
     background: #FFFFFF;
     width: 500px !important;
-    float: right;
 }
 
 #left_jt {
@@ -28,5 +27,8 @@ p {
     width: 500px !important;
     float: left !important;
     
+}
+.clearfix{
+    clear:both
 }
 
