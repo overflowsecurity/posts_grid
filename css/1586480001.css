@@ -24,6 +24,8 @@ p {
     float: right;
     clear: both;
     padding-bottom: 10px;
+    border-bottom: black;
+    border-style: solid;
 }
 
 
