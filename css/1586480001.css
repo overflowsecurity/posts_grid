@@ -14,18 +14,19 @@ p {
 
 #wrapper {
     margin: 0 auto;
-    width: 1000px;
+    width: 100%;
 }
 
 #content {
     float: left;
     background: #FFFFFF;
-    width: 50%;
+    width: 50% !important;
 }
 
 #leftcolumn {
     background: #FFFFFF;
-    width: 50%;
-    float: left;
+    width: 50% !important;
+    float: left !important;
+    
 }
 
