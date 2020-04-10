@@ -12,24 +12,21 @@ p {
     padding: 10px;
 }
 
-#wrapper_jt {
+#wrapper {
     margin: 0 auto;
-    width: 2048px;
+    width: 1000px;
 }
 
-#content_jt {
+#content {
+    float: left;
     background: #FFFFFF;
-    width: 50% !important;
+    width: 50%;
 }
 
-#left_jt {
+#left {
     background: #FFFFFF;
-    width: 50% !important;
-    display:inline-block;
-    
-}
-.clearfix{
-    clear:both
+    width: 50%;
+    float: left;
 }
 
 /* .splitscreen {
