@@ -7,8 +7,16 @@
  * Author: Justin Tharpe
  */
  
+
+function wpse_load_plugin_css() {
+    $plugin_url = plugin_dir_url( __FILE__ );
+
+    wp_enqueue_style( 'style1', $plugin_url . 'css/1586480001.css' );
+}
+
+
  function tbare_wordpress_plugin_demo($atts) {
-	$Content = '<head><link rel="stylesheet" type="text/css" href="/css/1586480001.css" /></head>';
+	//$Content = '<head><link rel="stylesheet" type="text/css" href="/css/1586480001.css" /></head>';
     
    
     $args = array(
@@ -35,14 +43,15 @@
         $output .= '</body>';
     }
 
-    $Content .= $output;
+    //$Content .= $output;
 
 
-    return $Content;
+    return $output;
 
 
 }
 
+add_action( 'wp_enqueue_scripts', 'wpse_load_plugin_css' );
 add_shortcode('tbare-plugin-demo', 'tbare_wordpress_plugin_demo');
 
 ?>
