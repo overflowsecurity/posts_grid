@@ -21,6 +21,7 @@ p {
     width: 50%;
     float: right;
     clear: both;
+    padding-bottom: 10px;
 }
     
 
@@ -29,6 +30,7 @@ p {
     width: 50%;
     display: inline-block;
     clear: both;
+    padding-bottom: 10px;
 }
 .clearfix{
     clear:both
