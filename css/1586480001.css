@@ -20,6 +20,7 @@ p {
 #content {
     background: #FFFFFF;
     width: 500px !important;
+    float: right;
 }
 
 #left {
