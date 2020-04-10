@@ -30,7 +30,7 @@ function wpse_load_plugin_css() {
         $output = '<div class="wrapper">';
         //$output .= '<ul>';
         foreach ( $my_posts as $p ){
-            $tumbs = get_the_post_thumbnail($p->ID, 'medium');
+            $tumbs = get_the_post_thumbnail($p->ID, 'large');
             $output .= '<div class="content">';
             //$output .= '<li>';
             $output .= '<a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a></li>';
@@ -38,7 +38,6 @@ function wpse_load_plugin_css() {
             $output .= '<div class="left">';
             $output .= $tumbs;
             $output .= '</div>';
-            $output .= '<br>';            
         }
         //$output .= '</ul>';
         $output .= '</div>';
