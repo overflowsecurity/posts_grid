@@ -37,6 +37,7 @@ function wpse_load_plugin_css() {
             $output .= '<div class="left">';
             $output .= '<li class="left">' . $tumbs . '</li>';
             $output .= '</div>';
+            $output .= ' <div class="break"></div>';
         }
         
         $output .= '</ul>';
