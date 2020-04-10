@@ -16,7 +16,6 @@ function wpse_load_plugin_css() {
 
 
  function tbare_wordpress_plugin_demo($atts) {
-	//$Content = '<head><link rel="stylesheet" type="text/css" href="/css/1586480001.css" /></head>';
     
    
     $args = array(
