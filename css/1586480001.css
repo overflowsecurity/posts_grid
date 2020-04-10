@@ -34,7 +34,6 @@ p {
 
 .splitscreen {
     display:flex;
-    flex-direction: row;
 
 }
 .splitscreen .left {
