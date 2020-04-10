@@ -3,7 +3,7 @@
  * Plugin Name: Posts Grid
  * Plugin URI: https://overflownetworks.com 
  * Description: Display posts with image on the left, and text, and description on the right.
- * Version: 0.1
+ * Version: 0.2
  * Author: Justin Tharpe
  */
  
@@ -27,13 +27,13 @@ function wpse_load_plugin_css() {
     
     if( ! empty( $my_posts ) ){
         $output = '<body>';
-        $output .= '<div id="splitscreen">';
+        $output .= '<div id="flex-container">';
         foreach ( $my_posts as $p ){
             $tumbs = get_the_post_thumbnail($p->ID, 'medium');
-            $output .= '<div id="right">';
+            $output .= '<div>';
             $output .= '<a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a>';
             $output .= '</div>';
-            $output .= '<div id="left">';
+            $output .= '<div>';
             $output .= $tumbs;
             $output .= '</div>';
 
