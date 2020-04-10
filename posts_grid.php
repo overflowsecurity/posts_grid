@@ -28,19 +28,19 @@ function wpse_load_plugin_css() {
     if( ! empty( $my_posts ) ){
         //$output = '<body>';
         $output = '<div class="wrapper">';
-        $output .= '<ul>';
+        //$output .= '<ul>';
         foreach ( $my_posts as $p ){
             $tumbs = get_the_post_thumbnail($p->ID, 'medium');
             $output .= '<div class="content">';
-            $output .= '<li>';
+            //$output .= '<li>';
             $output .= '<a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a></li>';
             $output .= '</div>';
             $output .= '<div class="left">';
             $output .= $tumbs;
             $output .= '</div>';
-            $output .= '</li>';            
+            //$output .= '</li>';            
         }
-        $output .= '</ul>';
+        //$output .= '</ul>';
         $output .= '</div>';
     }
 
