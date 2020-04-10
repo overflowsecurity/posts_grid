@@ -21,8 +21,8 @@
         $output = '<ul>';
         foreach ( $my_posts as $p ){
             $tumbs = get_the_post_thumbnail($p->ID, 'large');
-            $output .= ' <div style="display: table-cell; border: 10px; boarder-color: black;"><li class="content"><a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a></li>';
-            $output .= ' <div style="display: table-cell; border: 10px; boarder-color: black;"><li class="leftcolumn">' . $tumbs;
+            $output .= ' <li class="content"><a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a></li>';
+            $output .= ' <li class="leftcolumn">' . $tumbs . '</li>';
         }
         $output .= '<ul>';
     }
