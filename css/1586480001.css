@@ -20,7 +20,7 @@ p {
 .content {
     background: #FFFFFF;
     width: 50%;
-    display: inline-block;
+    float: right;
     clear: both;
 }
     
