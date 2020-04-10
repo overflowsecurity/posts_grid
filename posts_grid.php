@@ -28,14 +28,14 @@ function wpse_load_plugin_css() {
     if( ! empty( $my_posts ) ){
         //$output = '<body>';
         $output = '<div class="splitscreen">';
-        $output .= '<ul>';
+        $output .= '<ul class="splitscreen">';
         foreach ( $my_posts as $p ){
             $tumbs = get_the_post_thumbnail($p->ID, 'medium');
             $output .= '<div class="right">';
-            $output .= '<li><a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a></li>';
+            $output .= '<li class="right"><a href="' . get_permalink( $p->ID ) . '">' . $p->post_title . '</a></li>';
             $output .= '</div>';
             $output .= '<div class="left">';
-            $output .= '<li>' . $tumbs . '</li>';
+            $output .= '<li class="left">' . $tumbs . '</li>';
             $output .= '</div>';
         }
         
