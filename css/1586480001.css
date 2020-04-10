@@ -28,6 +28,9 @@ p {
     width: 50%;
     float: left;
 }
+.clearfix{
+    clear:both
+}
 
 /* .splitscreen {
     display:flex;
