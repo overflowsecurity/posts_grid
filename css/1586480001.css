@@ -15,20 +15,22 @@ p {
 #wrapper {
     margin: 0 auto;
     width: 1000px;
+    display: inline-block;
 }
 
 #content {
     float: left;
     background: #FFFFFF;
     width: 50%;
-    clear: both;
+    margin-left: 50px;
 }
 
 #left {
     background: #FFFFFF;
     width: 50%;
     float: left;
-    clear: both;
+    position: absolute;
+
 }
 .clearfix{
     clear:both
